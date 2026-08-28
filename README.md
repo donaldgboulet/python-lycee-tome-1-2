@@ -9,6 +9,13 @@ Ce plan s'appuie sur les deux tomes déjà présents dans ce dossier :
 
 Les dossiers `Cours/` et `Projets/` créés dans `Python au lycée– tome 2/` reprennent la même logique que ceux déjà utilisés dans le Tome 1, pour rester cohérent avec ce qui existe déjà.
 
+Ce dépôt regroupe aussi ce qui existait dans l'ancien dossier `Formation_Python_2026` (fusionné ici le 28/08/2026) :
+
+- `Python au lycée– tome 1/Fondamentaux/chapitre_5_Arithmétique_Boucle_tant_que.py` — le chapitre 5 déjà commencé
+- `Python au lycée– tome 1/projet/projet_convertisseur_notes.py` — un projet déjà réalisé
+- `computer_vision/` et `computervision/` — exploration IA (détection de mains avec OpenCV/mediapipe), en dehors du programme Tome 1/2 mais conservée
+- `Ressources/apprendre-a-programmer-avec-python-3.pdf` — livre de référence complémentaire
+
 ## Pourquoi les deux tomes avant les projets data
 
 1. Les deux PDF couvrent l'ensemble du programme (conditions, boucles, fonctions, POO, algorithmes).
@@ -68,8 +75,12 @@ Objectif : NumPy, Pandas, Machine Learning.
 
 ## Prochaines étapes
 
-1. Commencer par le chapitre 1 du Tome 1 si ce n'est pas déjà fait, sinon reprendre où le travail dans `Fondamentaux/` s'est arrêté.
+1. Continuer le chapitre 5 du Tome 1 (arithmétique, boucle "tant que", nombres de Fermat) — c'est là où le travail s'est arrêté.
 2. Committer sur Git chaque semaine (voir `GUIDE_GIT_THONNY.md` dans ce dossier).
 3. À la fin de chaque chapitre, faire les exercices avant de passer au suivant.
 4. En décembre, consacrer le mois aux 10 projets du Tome 1 plutôt que d'avancer dans le Tome 2.
 5. Revenir à ce README pour ajuster le calendrier si le rythme réel diffère (c'est normal et attendu).
+
+## Statut
+
+Dépôt consolidé le 28/08/2026 : ce dossier remplace désormais l'ancien `Formation_Python_2026` (qui pointait vers `github.com/donaldgboulet/-Formation_Python_2026`). Tout le contenu utile de l'ancien dossier a été récupéré ici, réorganisé selon la structure Tome 1 / Tome 2.
