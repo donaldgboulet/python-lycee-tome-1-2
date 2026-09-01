@@ -50,7 +50,62 @@ ou False."""
 
 def est_divisible(a,b):
     return a%b==0   
-print(est_divisible(5,1))
-print(est_divisible(75,5))
-print(est_divisible(39,7))
+#print(est_divisible(5,1))
+
+
+
+"""
+Activité2(Nombrespremiers).
+__Objectifs:tester_si_un_entier_est(ou_pas)un_nombre_premier__
+
+"""
+#1 :-)Pluspetitdiviseur.
+
+def plus_petit_diviseur(n):
+    d = 2
+    while n%d!=0:
+        d +=1
+    return d
+    
+#print(plus_petit_diviseur(14))
+
+
+#2 :-)Nombrespremiers(1).
+"""
+Activité2(Nombrespremiers).
+__Objectifs:tester_si_un_entier_est(ou_pas)un_nombre_premier__
+
+"""
+def plus_petit_diviseur(n):
+    d = 2
+    while n%d!=0:
+        d +=1
+    return d
+    
+print(plus_petit_diviseur(17))
+
+#2 :-)Nombrespremiers(1).
+
+def est_premier_1(n):
+    
+    if plus_petit_diviseur(n)==n:
+        return True
+    else:
+        return False
+        
+print(est_premier_1(13))
+
+
+#3 :-) Nombre_fermat(n)
+
+def nombre_fermat(n):
+    f_n = 2**2**n + 1
+    while est_premier_1(f_n):
+        n += 1
+        f_n = 2**2**n + 1   # à recalculer ici, avec le nouveau n
+    return f_n,n
+
+print(nombre_fermat(0))
+
+
 
