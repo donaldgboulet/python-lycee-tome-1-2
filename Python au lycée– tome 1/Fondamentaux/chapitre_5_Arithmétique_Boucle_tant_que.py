@@ -80,6 +80,19 @@ def est_premier_3(n):
  
 # 6. Temps de calcul — comparer est_premier_1 / 2 / 3 sur un million d'appels
 # A faire
+import timeit
+
+
+print(timeit.timeit("est_premier_1(97)",
+    setup="from __main__ import est_premier_1",
+    number=100000))
+
+print(timeit.timeit("est_premier_2(97)",
+    setup="from __main__ import est_premier_2",
+    number=100000))
+print(timeit.timeit("est_premier_3(97)",
+    setup="from __main__ import est_premier_3",
+    number=100000))
  
 # ============================================================
 # Tests
