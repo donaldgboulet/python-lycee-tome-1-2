@@ -8,9 +8,9 @@ où l’ordinateur a le droit de mentir ou de tricher!
 """
 from random import *
 
-mystere = randint(0, 99)
+mystere = randint(0, 10)
 
-for i in range(7):
+for i in range(3):
     reponse = int(input("Ton nombre : "))
     
     if reponse < mystere:
