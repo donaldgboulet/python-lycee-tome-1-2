@@ -57,4 +57,29 @@ def affiche_conjuguaison(verbe):
         print("Ce n'est pas un verbe du premier groupe.")
     
 verbe = input("Veuillez entrez un verbe du premier groupe Svp: ")    
-affiche_conjuguaison(verbe)   
+affiche_conjuguaison(verbe)
+
+
+
+
+
+# ----- Activité 2 :Jeux de mots -----
+""" Objectifs : manipuler des mots de façon amusante """
+
+# 1:-) 1. Distance entre deux mots.
+
+
+def distance_hamming(mot1,mot2):
+    compteur = 0
+    for i in range(len(mot1)):
+            if mot1[i] != mot2[i]:
+                compteur +=1
+    return compteur   
+    
+mot1 = input("Veuillez entrez le premier mot que vouz vouliez calculer la distance: ")
+mot2 = input("Veuillez entrez le deuxieme mot que vouz vouliez calculer la distance: ")
+print(distance_hamming(mot1,mot2))
+print(distance_hamming("SAPIN","LAPIN"))
+print(distance_hamming("JAPON","SAVON"))
+print(distance_hamming("LAPIN","SATIN"))
+
