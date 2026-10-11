@@ -86,8 +86,6 @@ print(distance_hamming("LAPIN","SATIN"))
 
 # 2:-) 2. Le Latin-cochon
 
-# 2:-) 2. Le Latin-cochon
-
 def latin_cochon(mot):
     
     if	mot[0] in "aeiuoyEAIUYO":
@@ -101,3 +99,16 @@ def latin_cochon(mot):
 print(latin_cochon("Bonjour"))
 print(latin_cochon("VITRE"))
 print(latin_cochon("Orange"))
+
+
+# 3:-) 3. Le Verlan
+
+def verlan(mot):
+    mot = mot[::-1]
+    return mot.upper()
+    
+print(verlan("Tocard"))
+    
+
+# 4:-) 4. Palindrome.
+    
