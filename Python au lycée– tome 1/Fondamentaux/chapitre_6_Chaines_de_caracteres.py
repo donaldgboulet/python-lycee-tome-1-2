@@ -63,7 +63,7 @@ affiche_conjuguaison(verbe)
 
 
 
-# ----- Activité 2 :Jeux de mots -----
+# ----- Activité 2 :Jeux de mots --8##---
 """ Objectifs : manipuler des mots de façon amusante """
 
 # 1:-) 1. Distance entre deux mots.
@@ -83,3 +83,21 @@ print(distance_hamming("SAPIN","LAPIN"))
 print(distance_hamming("JAPON","SAVON"))
 print(distance_hamming("LAPIN","SATIN"))
 
+
+# 2:-) 2. Le Latin-cochon
+
+# 2:-) 2. Le Latin-cochon
+
+def latin_cochon(mot):
+    
+    if	mot[0] in "aeiuoyEAIUYO":
+            print("Votre mot commence par une Voyelle pas besoin alors d'appliquer le latin cochon Merci")
+            return mot.upper()
+    else:
+        mot = mot[0:]
+        new_mot = mot[1:] + mot[0].lower() +"um"
+        return new_mot.upper()
+#mot = input("Veuillez entrez votre mot: ")   
+print(latin_cochon("Bonjour"))
+print(latin_cochon("VITRE"))
+print(latin_cochon("Orange"))
