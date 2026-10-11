@@ -110,5 +110,17 @@ def verlan(mot):
 print(verlan("Tocard"))
     
 
-# 4:-) 4. Palindrome.
-    
+# 4:-) 4. Palindrome
+
+# 4:-) 4. Palindrome
+
+def est_un_palindrome(mot):
+    if mot == mot[::-1]:
+         return True
+        # print("Le mot",mot," est pas  palindrome")
+    else:
+        return False
+        #print("Le mot",mot,"n'est pas palindrome")
+        
+print(est_un_palindrome("bonjour"))
+print(est_un_palindrome("kayak"))
